@@ -63,7 +63,7 @@ static void UpdateAddress(AddressEndPoint endPoint)
     var address = endPoint.GetOne(id);
     Console.WriteLine("Veuillez sélectionner un champ à modifier");
     var paramInput = Console.ReadLine();
-    int paramId = GetEntier(input);
+    int paramId = GetEntier(paramInput);
     Console.WriteLine("Veuillez saisir une valeur pour ce champ");
     var value = Console.ReadLine();
     endPoint.Update(address, paramId, value);
